@@ -43,6 +43,13 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: '0.0.2',
+              path: '/',
+            },
+          },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -62,10 +69,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Radicalbit AI Monitoring Platform',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Radicalbit AI Monitoring Platform',
+          src: 'img/radicalbit.svg',
         },
         items: [
           {
@@ -74,6 +81,12 @@ const config = {
             to: '/docs', 
             label: 'Docs', 
             position: 'left'
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+            dropdownActiveClassDisabled: true,
           },
           {
             href: 'https://github.com/robbenti/github-pages-test',
@@ -89,7 +102,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Documentation',
                 to: '/',
               },
             ],
@@ -106,13 +119,13 @@ const config = {
                 href: 'https://discordapp.com/invite/docusaurus',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'X',
+                href: 'https://x.com/weareradicalbit/',
               },
             ],
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Radicalbit AI Monitoring Platform Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
